@@ -35,6 +35,6 @@ jobs:
         terraform_version: $TERRAFORM_VERSION
     - uses: actions/checkout@v4
     - run : terraform -chdir=./terraform init
-    - run : terraform -chdir=./terraform plan -out tfplan
+    - run : terraform -chdir=./terraform plan -destroy -out tfplan
     - run : terraform -chdir=./terraform apply tfplan
     - run : terraform -chdir=./terraform show
