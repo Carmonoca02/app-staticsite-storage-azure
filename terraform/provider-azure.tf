@@ -26,3 +26,5 @@ resource "azurerm_resource_group" "rg" {
     name     = "rg-staticsite-lb-fernanda"
     location = "brazilsouth"
 }
+
+#oi
